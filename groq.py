@@ -45,7 +45,8 @@ payload = {
     "messages": [{"role": "user", "content": "Say 'hello' in one word"}]
 }
 headers = {
-    "Authorization": "Bearer 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",
+    "Authorization": f"Bearer {os.getenv('GROQ_API_KEY')}",
+
 
     "Content-Type": "application/json"
 }
